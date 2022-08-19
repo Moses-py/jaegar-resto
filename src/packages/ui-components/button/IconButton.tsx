@@ -1,7 +1,7 @@
 import { IconButtonRoot } from "./Button.styles";
 import { ButtonProps as MuiButtonProps } from "@mui/material";
 
-interface IconButtonProps {
+export interface IconButtonProps {
   icon: React.ReactNode;
   variant: MuiButtonProps["variant"];
   onClick?: () => void;

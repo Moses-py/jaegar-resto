@@ -1,11 +1,18 @@
 import { SidebarButtonRoot } from "./Button.styles";
-import { IconButton } from "./IconButton";
+import { IconButton, IconButtonProps } from "./IconButton";
 import AddRoundedIcon from "@mui/icons-material/AddRounded";
 
-export const SidebarButton: React.FunctionComponent = () => {
+export const SidebarButton: React.FunctionComponent<IconButtonProps> = ({
+  variant,
+  onClick,
+}) => {
   return (
     <SidebarButtonRoot>
-      <IconButton icon={<AddRoundedIcon />} variant="contained" />
+      <IconButton
+        icon={<AddRoundedIcon />}
+        variant={variant}
+        onClick={onClick}
+      />
     </SidebarButtonRoot>
   );
 };

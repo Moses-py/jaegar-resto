@@ -1,4 +1,21 @@
 import { createTheme } from "@mui/material/styles";
+
+declare module "@mui/material/styles" {
+  interface Theme {
+    inputPalette: {
+      border: string;
+      main: string;
+    };
+  }
+  // allow configuration using `createTheme`
+  interface ThemeOptions {
+    inputPalette: {
+      border?: string;
+      main?: string;
+    };
+  }
+}
+
 export const theme = createTheme({
   palette: {
     primary: {
@@ -6,6 +23,10 @@ export const theme = createTheme({
       light: "#FFFFFF",
       dark: "#000000",
     },
+  },
+  inputPalette: {
+    border: "#393C49",
+    main: "#2D303E",
   },
   typography: {
     fontFamily: "'Barlow', sans-serif",

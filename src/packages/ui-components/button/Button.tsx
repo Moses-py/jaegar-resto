@@ -17,6 +17,7 @@ export const Button: React.FunctionComponent<ButtonProps> = ({
   variant,
   size,
   fullWidth,
+  startIcon,
   onClick,
   ...restProps
 }) => {
@@ -27,6 +28,7 @@ export const Button: React.FunctionComponent<ButtonProps> = ({
       disableElevation
       onClick={onClick}
       variant={variant}
+      startIcon={startIcon}
       {...restProps}
     >
       {children}
