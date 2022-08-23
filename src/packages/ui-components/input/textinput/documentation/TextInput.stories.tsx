@@ -15,7 +15,8 @@ export const TextInputField: ComponentStory<typeof TextInput> = () => {
   return (
     <TextInput
       disabled={false}
-      label="Search"
+      placeholder="Search"
+      fullWidth={true}
       inputAdornment={<SearchRoundedIcon fontSize="small" />}
     />
   );

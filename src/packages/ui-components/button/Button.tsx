@@ -24,7 +24,6 @@ export const Button: React.FunctionComponent<ButtonProps> = ({
   return (
     <Root
       fullWidth={fullWidth}
-      disableRipple
       disableElevation
       onClick={onClick}
       variant={variant}

@@ -8,20 +8,16 @@ interface TextInputProps {
   disabled?: boolean;
   inputAdornment?: React.ReactNode;
   fullWidth?: boolean;
-  variant?: TextFieldProps["variant"];
   type?: TextFieldProps["type"];
   helperText?: string;
-  label?: string;
 }
 export const TextInput: React.FunctionComponent<TextInputProps> = ({
   placeholder,
   onChange,
   value,
   disabled,
-  variant,
   fullWidth,
-  helperText,
-  label,
+  inputAdornment,
 }) => {
   return (
     <TextInputField
@@ -30,10 +26,8 @@ export const TextInput: React.FunctionComponent<TextInputProps> = ({
       onChange={onChange}
       value={value}
       fullWidth={fullWidth}
-      variant={variant}
-      helperText={helperText}
-      size="small"
-      label={label}
+      disableUnderline
+      startAdornment={inputAdornment}
     />
   );
 };

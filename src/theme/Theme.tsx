@@ -38,6 +38,7 @@ export const theme = createTheme({
       fontWeight: 500,
       lineHeight: "39.2px",
       letterSpacing: 0,
+      color: "#FFFFFF",
     },
     h2: {
       fontSize: "20px",
@@ -53,11 +54,13 @@ export const theme = createTheme({
       fontSize: "14px",
       lineHeight: "18.2px",
       letterSpacing: "0.16px",
+      color: "#E0E6E9",
     },
     body2: {
       fontSize: "12px",
       lineHeight: "16.8px",
       letterSpacing: "0.32px",
+      color: "#E0E6E9",
     },
     subtitle1: {
       fontSize: "14px",
