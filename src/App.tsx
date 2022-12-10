@@ -1,7 +1,13 @@
 import React from "react";
+import { Homepage } from "./pages/home/Homepage";
+import { ThemeProvider } from "./theme/ThemeProvider";
 
 function App() {
-  return <div className="App">Jaegar Resto</div>;
+  return (
+    <ThemeProvider>
+      <Homepage />
+    </ThemeProvider>
+  );
 }
 
 export default App;
